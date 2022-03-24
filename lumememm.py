@@ -14,6 +14,7 @@ pygame.draw.circle(screen, [255, 255, 255], [150,220], 52, 100) # Joonistab alum
 pygame.draw.polygon(screen, [255, 121, 0], [[149,90],[144,75],[154,75]], 0) # Joonistab porgandi nina
 pygame.draw.circle(screen, [0, 0, 0], [158,65], 4.5, 3) # Joonistab parempoolse silma
 pygame.draw.circle(screen, [0, 0, 0], [140,65], 4.5, 3) # Joonistab vasakpoolse silma
+
 pygame.display.flip()
 
 
