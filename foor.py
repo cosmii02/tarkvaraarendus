@@ -16,20 +16,6 @@ pygame.draw.circle(screen, [255, 255, 0], [150,150], 40, 100)
 pygame.draw.circle(screen, [0, 255, 0], [150,235], 40, 100)
 pygame.display.flip()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 running = True
 while running:
   for event in pygame.event.get():
