@@ -5,9 +5,13 @@ screen=pygame.display.set_mode([300,300]) # määrab akna resolutsiooni
 pygame.display.set_caption("Foor") # Määrab akna nime
 
 screen.fill([0, 0, 0])
+# Joonistab hallid ääred
 pygame.draw.rect(screen, [80, 80, 80], [90, 20, 120, 260], 2)
+# Joonistab punase ringi
 pygame.draw.circle(screen, [255, 0, 0], [150,64], 40, 100)
+# Joonistab kollase ringi
 pygame.draw.circle(screen, [255, 255, 0], [150,150], 40, 100)
+# Joonistab rohelise ringi
 pygame.draw.circle(screen, [0, 255, 0], [150,235], 40, 100)
 pygame.display.flip()
 
