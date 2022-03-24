@@ -7,7 +7,7 @@ pygame.display.set_caption("Foor") # Määrab akna nime
 # Teeb tausta mustaks
 screen.fill([0, 0, 0])
 # Joonistab hallid ääred
-pygame.draw.rect(screen, [80, 80, 80], [90, 20, 120, 260], 2)
+pygame.draw.rect(screen, [80, 80, 80], [100, 15, 100, 270], 2)
 # Joonistab punase ringi
 pygame.draw.circle(screen, [255, 0, 0], [150,64], 40, 100)
 # Joonistab kollase ringi
