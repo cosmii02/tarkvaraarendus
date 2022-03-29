@@ -28,10 +28,10 @@ pygame.draw.circle(screen, [255,255,0], [290,10], 31, 100) # Joonistab päikese
 pygame.draw.line(screen, [255, 255, 0], [289, 10], [205, 20], 5) # Joonistab ülemise päikesekiire
 pygame.draw.line(screen, [255, 255, 0], [280, 20], [190, 69], 5) # Joonistab keskmise päikesekiire
 pygame.draw.line(screen, [255, 255, 0], [281, 39], [229, 110], 5) # Joonistab alumise päikesekiire
-pygame.draw.line(screen, [255, 255, 255], [0, 290], [300, 290], 40)
-pygame.draw.circle(screen, [255,255,255], [230,50], 25, 100)
-pygame.draw.circle(screen, [255,255,255], [255,50], 15, 100)
-pygame.draw.circle(screen, [255,255,255], [205,50], 15, 100)
+pygame.draw.line(screen, [255, 255, 255], [0, 290], [300, 290], 40) # Joonistab lume
+pygame.draw.circle(screen, [255,255,255], [230,50], 25, 100) # Joonistab pilve keskmise osa
+pygame.draw.circle(screen, [255,255,255], [255,50], 15, 100) # Joonistab pilve parempoolse osa
+pygame.draw.circle(screen, [255,255,255], [205,50], 15, 100) # Joonistab pilve vasakpoolse osa
 pygame.display.flip()
 
 
