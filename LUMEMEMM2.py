@@ -4,7 +4,7 @@ pygame.init() # Initsialiseerib pygame funktsioonid
 screen=pygame.display.set_mode([300,300]) # määrab akna resolutsiooni
 pygame.display.set_caption("Lumemees") # Määrab akna nime
 
-screen.fill([0, 0, 0]) # Teeb tausta mustaks
+screen.fill([173,216,230]) # Teeb tausta mustaks
 pygame.draw.circle(screen, [255, 255, 255], [150,70], 31, 100) # Joonistab keskmise ringi
 pygame.draw.circle(screen, [255, 255, 255], [150,135], 39, 100) # Joonistab ülemise ringi
 pygame.draw.circle(screen, [255, 255, 255], [150,220], 52, 100) # Joonistab alumise ringi
@@ -22,6 +22,12 @@ pygame.draw.line(screen, [128, 128, 128], [82, 95], [70, 90], 3) # Joonistab vas
 pygame.draw.line(screen, [128, 128, 128], [210,115], [200, 85], 3) # Joonistab parema käe sõrmed
 pygame.draw.line(screen, [255, 0, 255], [110,37], [200, 37], 3) # Joonistab mütsi noka
 pygame.draw.line(screen, [255, 0, 255], [110,29], [160, 19], 40) # Joonistab mütsi enda
+pygame.draw.line(screen, [0, 0, 255], [80, 220], [80, 65], 5) # Joonistab harjavarre
+pygame.draw.line(screen, [0, 0, 255], [75, 60], [140, 70], 12) #Joonistab Harja
+pygame.draw.circle(screen, [255,255,0], [290,10], 31, 100) # Joonistab päikese
+pygame.draw.line(screen, [255, 255, 0], [289, 10], [205, 20], 5) # Joonistab ülemise päikesekiire
+pygame.draw.line(screen, [255, 255, 0], [280, 20], [210, 60], 5) # Joonistab keskmise päikesekiire
+pygame.draw.line(screen, [255, 255, 0], [281, 39], [229, 110], 5) # Joonistab alumise päikesekiire
 pygame.display.flip()
 
 
