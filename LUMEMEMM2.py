@@ -19,23 +19,24 @@ pygame.draw.line(screen, [128, 128, 128], [118.5, 115], [82, 95], 3)
 pygame.draw.line(screen, [128, 128, 128], [82, 95], [82, 105], 3)
 pygame.draw.line(screen, [128, 128, 128], [82, 95], [82, 86], 3)
 pygame.draw.line(screen, [128, 128, 128], [82, 95], [70, 90], 3)
-
+pygame.draw.line(screen, [128, 128, 128], [210,115], [200, 85], 3)
+pygame.draw.line(screen, [255, 0, 255], [110,37], [200, 37], 3)
+pygame.draw.line(screen, [255, 0, 255], [110,29], [160, 19], 40)
 pygame.display.flip()
 
 
 
 
 
+def lumemees():
 
+    run = True
+    while run:
 
+        for event in pygame.event.get():   #kontrollib pygame'i sündmusi
+            if event.type == pygame.QUIT:  # Sellega sulgeb pygame'i/ saab sulgeda kui vajutada akna ülevalt paremalt X
+                run = False
+    pygame.quit()
 
-
-
-
-running = True
-while running:
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      running = False
-    if running == False:
-      pygame.quit()
+if __name__ == "__main__": # teeb kindlaks, et käivitada ainult lumemees
+    lumemees()
