@@ -32,6 +32,12 @@ pygame.draw.line(screen, [255, 255, 255], [0, 290], [300, 290], 40) # Joonistab 
 pygame.draw.circle(screen, [255,255,255], [230,50], 25, 100) # Joonistab pilve keskmise osa
 pygame.draw.circle(screen, [255,255,255], [255,50], 15, 100) # Joonistab pilve parempoolse osa
 pygame.draw.circle(screen, [255,255,255], [205,50], 15, 100) # Joonistab pilve vasakpoolse osa
+pygame.draw.circle(screen, [255,255,255], [100,27], 15, 100) # Joonistab vasakpoolse pilve parempoolse osa
+pygame.draw.circle(screen, [255,255,255], [75,27], 25, 100) # Joonistab vasakpoolse pilve keskmise osa
+pygame.draw.circle(screen, [255,255,255], [50,27], 15, 100) # Joonistab vasakpoolse pilve vasakpoolse osa
+pygame.draw.circle(screen, [255,255,255], [250,150], 25, 100) # Joonistab alumise pilve keskmise osa
+pygame.draw.circle(screen, [255,255,255], [275,150], 15, 100) # Joonistab alumise pilve parempoolse osa
+pygame.draw.circle(screen, [255,255,255], [225,150], 15, 100) # Joonistab alumise pilve vasakpoolse osa
 pygame.display.flip()
 
 
