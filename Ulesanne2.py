@@ -7,7 +7,7 @@ bg = pygame.image.load("img.png")
 char = pygame.image.load("img_1.png")
 char = pygame.transform.scale(char, (253, 304)) #muudab pildi suuruse
 textb = pygame.image.load("img_2.png") # laeb pildi muutujale
-vikklogo = pygame.image.load("VIKK logo.png") #laeb pildi muutujale
+vikklogo = pygame.image.load("VIKK logo2.png") #laeb pildi muutujale
 vikklogo = pygame.transform.scale(vikklogo, (int(vikklogo.get_width()*0.75), int(vikklogo.get_height()*0.75)))
 # Make img3 16% smaller
 textb = pygame.transform.scale(textb, (int(textb.get_width() * 0.85), int(textb.get_height() * 0.85)))
