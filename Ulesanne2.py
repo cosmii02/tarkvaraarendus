@@ -13,7 +13,7 @@ screen.blit(bg, (0, 0)) # Lisab ekraani keskele pildi
 screen.blit(char, (104, 159)) # Lisab ekraanile karakteri pildi
 screen.blit(textb, (245, 66))
 font = pygame.font.SysFont("Arial", 20)
-text = font.render("Tere, olen Kenneth Tuisk", True, (255, 255, 255))
+text = font.render("Tere, olen nimi", True, (255, 255, 255))
 screen.blit(text, (280, 140))
 
 
