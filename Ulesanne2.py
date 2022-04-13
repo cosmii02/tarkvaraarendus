@@ -21,9 +21,9 @@ screen.blit(textb, (245, 66)) # Lisab musta tekstikasti pildi
 screen.blit(vikklogo, (0, 0)) # Lisab ekraanile vikki logo
 screen.blit(cake, (460, 190)) # Lisab ekraanile koogi pildi
 screen.blit(mook, (460 + cake.get_width() + -70, 100)) # Paneb mõõga koogi kõrvale
-font = pygame.font.SysFont("Arial", 20)
-text = font.render("Tere, olen Kenneth Tuisk", True, (255, 255, 255))
-screen.blit(text, (280, 140))
+font = pygame.font.SysFont("Arial", 20) # Määrab fonti
+text = font.render("Tere, olen Kenneth Tuisk", True, (255, 255, 255)) # Teksti kirjutamine eelmääratud fondiga
+screen.blit(text, (280, 140)) # Lisab ekraanile muutuja texti
 
 
 pygame.display.flip() #värskendab ekraani
