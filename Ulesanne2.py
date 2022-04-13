@@ -14,8 +14,7 @@ cake = pygame.transform.scale(cake, (int(cake.get_width() * 0.13), int(cake.get_
 mook = pygame.image.load("mook.png") # laeb pildi muutujale
 mook = pygame.transform.scale(mook, (int(mook.get_width() * 0.20), int(mook.get_height() * 0.20))) #Teeb pildi 85% väiksemaks
 textb = pygame.transform.scale(textb, (int(textb.get_width() * 0.85), int(textb.get_height() * 0.85))) # Teeb pildi 15% väiksemaks
-# Rotate mook by 45 degrees
-mook = pygame.transform.rotate(mook, -45)
+mook = pygame.transform.rotate(mook, -45) # pöörab mõõga pilti 45 kraadi vasakule
 screen.blit(bg, (0, 0)) # Lisab ekraani keskele pildi
 screen.blit(char, (104, 159)) # Lisab ekraanile karakteri pildi
 screen.blit(textb, (245, 66)) # Lisab musta tekstikasti pildi
