@@ -3,8 +3,8 @@ pygame.init() #alustab pygame mooduli
 
 screen = pygame.display.set_mode((640, 480)) # määrab ekraani suuruse
 pygame.display.set_caption("Ülesanne 2") # määrab akna nime
-bg = pygame.image.load("img.png")
-char = pygame.image.load("img_1.png")
+bg = pygame.image.load("img.png") # Laeb img.png taustaks
+char = pygame.image.load("img_1.png") # Määrab muutujale char pildi img_1.png
 char = pygame.transform.scale(char, (253, 304)) #muudab pildi suuruse
 textb = pygame.image.load("img_2.png") # laeb pildi muutujale
 vikklogo = pygame.image.load("VIKK logo2.png") #laeb pildi muutujale
