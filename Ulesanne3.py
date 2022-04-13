@@ -11,6 +11,8 @@ screen.blit(background, (0, 0))
 ruutu_suurus = str(input("Sisesta ruudu suurus: ")) # Ask user for integer value for ruutsuurus
 if ruutu_suurus == '': # If user didn't enter anything
     ruutu_suurus=20
+# convert ruutu_suurus to integer
+ruutu_suurus = int(ruutu_suurus)
 red = str(input("Sisesta punase kogus 0-255: ")) # Ask user for integer value for red
 # if red == '' make red 255
 if red == '':
