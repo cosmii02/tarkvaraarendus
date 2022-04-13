@@ -3,8 +3,8 @@ pygame.init() #alustab pygame mooduli
 
 screen = pygame.display.set_mode((640, 480)) # määrab ekraani suuruse
 pygame.display.set_caption("Ülesanne 2") # määrab akna nime
-bg = pygame.image.load("img.png")
-char = pygame.image.load("img_1.png")
+bg = pygame.image.load("img.png") # Laeb img.png taustaks
+char = pygame.image.load("img_1.png") # Määrab muutujale char pildi img_1.png
 char = pygame.transform.scale(char, (253, 304)) #muudab pildi suuruse
 textb = pygame.image.load("img_2.png") # laeb pildi muutujale
 vikklogo = pygame.image.load("VIKK logo2.png") #laeb pildi muutujale
@@ -20,11 +20,10 @@ screen.blit(char, (104, 159)) # Lisab ekraanile karakteri pildi
 screen.blit(textb, (245, 66)) # Lisab musta tekstikasti pildi
 screen.blit(vikklogo, (0, 0)) # Lisab ekraanile vikki logo
 screen.blit(cake, (460, 190)) # Lisab ekraanile koogi pildi
-# Place mook right next to cake
-screen.blit(mook, (460 + cake.get_width() + -70, 100))
-font = pygame.font.SysFont("Arial", 20)
-text = font.render("Tere, olen nimi", True, (255, 255, 255))
-screen.blit(text, (280, 140))
+screen.blit(mook, (460 + cake.get_width() + -70, 100)) # Paneb mõõga koogi kõrvale
+font = pygame.font.SysFont("Arial", 20) # Määrab fonti
+text = font.render("Tere, olen Kenneth Tuisk", True, (255, 255, 255)) # Teksti kirjutamine eelmääratud fondiga
+screen.blit(text, (280, 140)) # Lisab ekraanile muutuja texti
 
 
 pygame.display.flip() #värskendab ekraani
