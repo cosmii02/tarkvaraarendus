@@ -11,7 +11,7 @@ textb = pygame.image.load("img_2.png")
 textb = pygame.transform.scale(textb, (int(textb.get_width() * 0.85), int(textb.get_height() * 0.85)))
 screen.blit(bg, (0, 0)) # Lisab ekraani keskele pildi
 screen.blit(char, (104, 159)) # Lisab ekraanile karakteri pildi
-screen.blit(textb, (245, 66))
+screen.blit(textb, (245, 66)) # Lisab musta tekstikasti pildi
 font = pygame.font.SysFont("Arial", 20)
 text = font.render("Tere, olen Kenneth Tuisk", True, (255, 255, 255))
 screen.blit(text, (280, 140))
