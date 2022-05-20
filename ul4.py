@@ -1,4 +1,4 @@
-import pygame, sys
+import pygame, sys, random
 
 pygame.init()
 
@@ -16,18 +16,21 @@ f1_blue = pygame.image.load("f1_blue.png") # load car image
 f1_blue = pygame.transform.rotate(f1_blue, 180) # rotate car image
 
 f1_red = pygame.image.load("f1_red.png") # load car image
-f1_red = pygame.transform.rotate(f1_red, 180) # rotate car image
 
 # speed and position
 
-BspeedY = 30 # initialize car speed
-BposX, BposY = 420, 0  # initialize car position
+BspeedY = 5 # initialize car speed
+
+BposY = 0
 RposX, RposY = 298, 390 # initialize car position
 RspeedY = 0 # initialize car speed
 gameover = False # initialize gameover flag
+
+BposX = random.randint(0, 420)  # initialize car position
+
 while not gameover:
     # fps
-    clock.tick(60)
+    clock.tick(120)
     # mängu sulgemine ristist
     events = pygame.event.get()
     for i in pygame.event.get():
@@ -48,6 +51,7 @@ while not gameover:
     if BposY >= 480:
         BposY = -120
         Score += 1
+        BposX = random.randint(0, 420)
 
     if RposY >= 480:
         RposY = -120
