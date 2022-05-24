@@ -1,6 +1,5 @@
 import pygame, sys, random, time # Imports the said modules
 pygame.init() #initialize pygame
-
 # initialize display at 640x480
 screen = pygame.display.set_mode((640, 480)) # set screen size
 pygame.display.set_caption("Animeerimine") # set window title
@@ -16,7 +15,6 @@ f1_blue = pygame.transform.rotate(f1_blue, 180) # rotate car image
 
 f2_blue = pygame.image.load("f1_blue.png") # load car image
 f2_blue = pygame.transform.rotate(f2_blue, 180) # rotate car image
-
 
 f1_red = pygame.image.load("f1_red.png") # load car image
 
@@ -65,7 +63,6 @@ while not gameover: # while game is not over loop
         RposX -= 5 # move car left
     if keys[pygame.K_RIGHT]: # move right
         RposX += 5 # move car right
-
 
     if B2posY >= 480: # if car is out of screen
         B2posY = -120 # reset car position
