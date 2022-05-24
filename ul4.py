@@ -11,7 +11,6 @@ Score = 0 # initialize score
 
 bg = pygame.image.load("bg_rally.jpg") # load background image
 
-
 f1_blue = pygame.image.load("f1_blue.png") # load car image
 f1_blue = pygame.transform.rotate(f1_blue, 180) # rotate car image
 
@@ -32,7 +31,6 @@ RspeedY = 0 # initialize car speed
 gameover = False # initialize gameover flag
 BposX = random.randint(450, 460)  # initialize car position
 B2posX = random.randint(450, 460) # initialize 2nd car position
-
 while not gameover: # while game is not over loop
     # fps
     clock.tick(120) # set frame rate
